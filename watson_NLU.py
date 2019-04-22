@@ -4,8 +4,8 @@ from ibm_watson.natural_language_understanding_v1 import Features, EntitiesOptio
 import textract
 
 
-file = 'report.txt'
-#file = 'summary.docx'
+file = '/resources/report.txt'
+#file = '/resources/summary.docx'
 #extension = 'docx'
 
 
