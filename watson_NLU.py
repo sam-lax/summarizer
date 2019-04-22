@@ -37,7 +37,7 @@ def chunk(text):
 
 
 def relevancy_dict(chunk):
-    service = NLU(version='2018-03-16', url='https://gateway.watsonplatform.net/natural-language-understanding/api', iam_apikey='mOIwpTciIXb5WLmD3vp2Eo5LUsKuXIc_q_0ynDvTyHXs')
+    service = NLU(version='2018-03-16', url='https://gateway.watsonplatform.net/natural-language-understanding/api', iam_apikey='#########')
     response = service.analyze(text=chunk, features=Features(entities=EntitiesOptions(), keywords=KeywordsOptions())).get_result()
     analysis = json.dumps(response, indent=2)
     return json.loads(analysis)
